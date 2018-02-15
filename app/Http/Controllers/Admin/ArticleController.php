@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Validation\Rule;
 use App\Article;
 class ArticleController extends Controller
 {
@@ -44,7 +45,7 @@ class ArticleController extends Controller
             'title' => [
                 'max:50',
                 'required',
-                Rule::unique('articles')->ignore($request->get('id'))
+                Rule::unique('articles')->ignore($id)
             ],
             'body' => 'required'
         ])->validate();
