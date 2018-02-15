@@ -12,7 +12,7 @@
     <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<div id="content" style="padding: 50px;">
+<div id="content" style="padding: 50px 250px;">
     <h4>
         <a href="/"><< 返回首页</a>
     </h4>
